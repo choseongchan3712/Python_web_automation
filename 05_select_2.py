@@ -16,3 +16,12 @@ for tag in td_tags:
 # KBS2
 # 주말연속극(수상한삼형제)
 # 33.4
+
+tr_tag = soup.select('tr')[1]
+td_tags = tr_tag.select('td')
+for tag in td_tags:
+    print(tag.get_text())
+# 1
+# KBS2
+# 주말연속극(수상한삼형제)
+# 33.4
